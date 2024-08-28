@@ -1854,6 +1854,10 @@ export type ExtensionRepo_AllExtensions = {
 export type ExtensionRepo_AnimeTorrentProviderExtensionItem = {
     id: string
     name: string
+    /**
+     * ISO 639-1 language code
+     */
+    lang: string
     settings?: HibikeTorrent_AnimeProviderSettings
 }
 
@@ -1874,6 +1878,10 @@ export type ExtensionRepo_ExtensionInstallResponse = {
 export type ExtensionRepo_MangaProviderExtensionItem = {
     id: string
     name: string
+    /**
+     * ISO 639-1 language code
+     */
+    lang: string
     settings?: HibikeManga_Settings
 }
 
@@ -1885,6 +1893,10 @@ export type ExtensionRepo_MangaProviderExtensionItem = {
 export type ExtensionRepo_OnlinestreamProviderExtensionItem = {
     id: string
     name: string
+    /**
+     * ISO 639-1 language code
+     */
+    lang: string
     episodeServers?: Array<string>
     supportsDub: boolean
 }
@@ -2109,7 +2121,7 @@ export type Manga_PageDimension = {
 }
 
 /**
- * - Filepath: ..\internal\manga\download.go
+ * - Filepath: internal/manga/download.go
  * - Filename: download.go
  * - Package: manga
  */
@@ -2470,7 +2482,7 @@ export type Offline_AnimeEntry = {
 }
 
 /**
- * - Filepath: ..\internal\offline\snapshot_entities.go
+ * - Filepath: internal/offline/snapshot_entities.go
  * - Filename: snapshot_entities.go
  * - Package: offline
  */

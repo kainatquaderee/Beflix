@@ -29232,6 +29232,17 @@
         "comments": []
       },
       {
+        "name": "Lang",
+        "jsonName": "lang",
+        "goType": "string",
+        "typescriptType": "string",
+        "required": true,
+        "public": true,
+        "comments": [
+          " ISO 639-1 language code"
+        ]
+      },
+      {
         "name": "Settings",
         "jsonName": "settings",
         "goType": "vendor_hibike_manga.Settings",
@@ -29268,6 +29279,17 @@
         "required": true,
         "public": true,
         "comments": []
+      },
+      {
+        "name": "Lang",
+        "jsonName": "lang",
+        "goType": "string",
+        "typescriptType": "string",
+        "required": true,
+        "public": true,
+        "comments": [
+          " ISO 639-1 language code"
+        ]
       },
       {
         "name": "EpisodeServers",
@@ -29314,6 +29336,17 @@
         "required": true,
         "public": true,
         "comments": []
+      },
+      {
+        "name": "Lang",
+        "jsonName": "lang",
+        "goType": "string",
+        "typescriptType": "string",
+        "required": true,
+        "public": true,
+        "comments": [
+          " ISO 639-1 language code"
+        ]
       },
       {
         "name": "Settings",
@@ -35054,7 +35087,7 @@
     "comments": []
   },
   {
-    "filepath": "..\\internal\\manga\\download.go",
+    "filepath": "../internal/manga/download.go",
     "filename": "download.go",
     "name": "MediaMap",
     "formattedName": "Manga_MediaMap",
@@ -35069,7 +35102,7 @@
     "comments": null
   },
   {
-    "filepath": "..\\internal\\manga\\download.go",
+    "filepath": "../internal/manga/download.go",
     "filename": "download.go",
     "name": "ProviderDownloadMap",
     "formattedName": "Manga_ProviderDownloadMap",
@@ -35473,7 +35506,7 @@
     "comments": []
   },
   {
-    "filepath": "..\\internal\\manga\\downloader\\chapter_downloader.go",
+    "filepath": "../internal/manga/downloader/chapter_downloader.go",
     "filename": "chapter_downloader.go",
     "name": "Registry",
     "formattedName": "ChapterDownloader_Registry",
@@ -36644,6 +36677,15 @@
         "comments": []
       },
       {
+        "name": "GroupName",
+        "jsonName": "group_name",
+        "goType": "[]string",
+        "typescriptType": "Array\u003cstring\u003e",
+        "required": false,
+        "public": true,
+        "comments": []
+      },
+      {
         "name": "HID",
         "jsonName": "hid",
         "goType": "string",
@@ -36659,6 +36701,54 @@
         "typescriptType": "Array\u003cany\u003e",
         "required": false,
         "public": true,
+        "comments": []
+      }
+    ],
+    "comments": []
+  },
+  {
+    "filepath": "../internal/manga/providers/comick_multi.go",
+    "filename": "comick_multi.go",
+    "name": "ComicKMulti",
+    "formattedName": "Manga_ComicKMulti",
+    "package": "manga_providers",
+    "fields": [
+      {
+        "name": "Url",
+        "jsonName": "Url",
+        "goType": "string",
+        "typescriptType": "string",
+        "required": true,
+        "public": true,
+        "comments": []
+      },
+      {
+        "name": "Client",
+        "jsonName": "Client",
+        "goType": "http.Client",
+        "typescriptType": "Client",
+        "usedStructName": "http.Client",
+        "required": false,
+        "public": true,
+        "comments": []
+      },
+      {
+        "name": "UserAgent",
+        "jsonName": "UserAgent",
+        "goType": "string",
+        "typescriptType": "string",
+        "required": true,
+        "public": true,
+        "comments": []
+      },
+      {
+        "name": "logger",
+        "jsonName": "logger",
+        "goType": "zerolog.Logger",
+        "typescriptType": "Logger",
+        "usedStructName": "zerolog.Logger",
+        "required": false,
+        "public": false,
         "comments": []
       }
     ],
@@ -41828,7 +41918,7 @@
     "comments": []
   },
   {
-    "filepath": "..\\internal\\offline\\snapshot_entities.go",
+    "filepath": "../internal/offline/snapshot_entities.go",
     "filename": "snapshot_entities.go",
     "name": "AssetMapImageMap",
     "formattedName": "Offline_AssetMapImageMap",
