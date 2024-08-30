@@ -1,9 +1,8 @@
 #!/bin/bash
-terget=$1
-res=$2
-out=$3
-filename=$(echo $(basename $out) | cut -f1 -d".")
-echo "------->>" $filename "--------"
-outpath=${out/%"$filename"}
-echo !!!!$outpath!!!!
-convert -resize $res $terget -quality 70%  $out
+
+for f in /home/kainatq/Downloads/aps/Beflix/seanime-web/public/icons/*
+do
+    w=$(identify -ping -format '%w' $f)
+    echo $w
+    convert /home/kainatq/Downloads/aps/Beflix/logo.png  -resize $w $f
+done
